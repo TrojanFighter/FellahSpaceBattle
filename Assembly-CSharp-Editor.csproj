@@ -53,6 +53,98 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\AudioBankCreatorGUI.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\AudioCreatorGUI.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\AudioEventCreatorGUI.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\BaseCreatorGUI.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\CreaterGUIHelper.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\DataDrawers\Audio\AudioDataDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\DataDrawers\Audio\DataDrawerHelper.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\DataDrawers\Audio\FolderDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\DataDrawers\Audio\MultiDataDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\DataDrawers\Audio\NodeTypeDataDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\DataDrawers\Audio\RandomDataDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\DataDrawers\Audio\SequenceDataDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\DataDrawers\Audio\TrackDataDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\DataDrawers\AudioBankLinkDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\DataDrawers\AudioEventDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\DataDrawers\Music\MusicFolderDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\DataDrawers\Music\MusicGroupDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\IntegrityGUI.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\InteractiveMusicCreatorGUI.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\MusicCreatorGUI.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\NodeWorkers\AudioBankWorker.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\NodeWorkers\AudioEventWorker.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\NodeWorkers\AudioNodeWorker.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\NodeWorkers\InteractiveMusicWorker.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\NodeWorkers\MusicWorker.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\NodeWorkers\NodeWorker.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\AudioParametersDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\AudioSourcePlayVisualizerDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\BankHookDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\CustomFalloffDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\DrawerHelper.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\EventHookCollisionDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\EventHookDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\EventTestDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\InAudioDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\InAudioEventDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\InAudioNodePropertyDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\InEventHookMusicControlDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\InHookMusicControlDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\InMusicGroupDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\InPlaylistDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\MecanimParameterDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\MecanimParameterListDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\PropertyDrawers\ReadOnlyAttributeDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\Element Adder Menu\ElementAdderMenuBuilder.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\Element Adder Menu\ElementAdderMenuCommandAttribute.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\Element Adder Menu\ElementAdderMeta.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\Element Adder Menu\GenericElementAdderMenu.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\Element Adder Menu\GenericElementAdderMenuBuilder.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\Element Adder Menu\IElementAdder.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\Element Adder Menu\IElementAdderMenu.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\Element Adder Menu\IElementAdderMenuBuilder.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\Element Adder Menu\IElementAdderMenuCommand.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\EventActionListAdapter.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\GenericListAdaptor.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\Internal\GUIHelper.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\Internal\ReorderableListResources.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\IReorderableListAdaptor.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\ReorderableListControl.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\ReorderableListFlags.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\ReorderableListGUI.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\ReorderableListStyles.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\ReorderableList\SerializedPropertyAdaptor.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Scene Object\InSplineConnectionDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Scene Object\InSplineDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Scene Object\InSplineNodeDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\TreeView\EventDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\TreeView\GenericTreeNodeDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\TreeView\MusicDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\TreeView\TreeDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Utilities\ActionOrder.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Utilities\DataCleanup.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Utilities\DataLoading.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Utilities\EditorEventUtil.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Utilities\EditorGUIHelper.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Utilities\InAudioWindowOpener.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Utilities\InUndoHelper.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Utilities\MissingDataHelper.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Utilities\OnDragging.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Utilities\SearchHelper.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Utilities\SerializedParent.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Utilities\SystemFolderHelper.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Windows\AuxWindow.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Windows\ErrorDrawer.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Windows\EventWindow.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Windows\GuideWindow.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Windows\InAudioBaseWindow.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Windows\InAudioWindow.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Windows\InMusicWindow.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Windows\InteractiveMusicWindow.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Windows\PreviewWindow.cs" />
+    <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\Windows\SplitDataWindow.cs" />
     <Compile Include="Assets\ResurgamStudios\CircularGravityForce Package\Examples (Optional)\Shared Assets\Scripts\Editor\Follow_Editor.cs" />
     <Compile Include="Assets\ResurgamStudios\CircularGravityForce Package\Examples (Optional)\Version 1-4 Examples\Scripts\Tools\Editor\CGF_Pivot_Editor.cs" />
     <Compile Include="Assets\ResurgamStudios\CircularGravityForce Package\Scrips\Editor\CGF_Editor.cs" />
@@ -139,6 +231,9 @@
     <Reference Include="UnityEditor.OSXStandalone.Extensions">
       <HintPath>D:/Program Files/Unity/Unity2017.3.0f3/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
+      <HintPath>F:/UnityProjects/IL2Sturmovik/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
+    </Reference>
     <Reference Include="GLTFSerialization">
       <HintPath>F:/UnityProjects/IL2Sturmovik/Assets/Sketchfab For Unity/Dependencies/Libraries/GLTFSerialization.dll</HintPath>
     </Reference>
@@ -171,9 +266,6 @@
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/MusketeerOrder/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
-      <HintPath>F:/UnityProjects/IL2Sturmovik/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
