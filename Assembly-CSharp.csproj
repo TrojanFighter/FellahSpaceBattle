@@ -53,6 +53,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FORGE3D\Force Field\Examples\Scripts\CameraGun.cs" />
+    <Compile Include="Assets\FORGE3D\Force Field\Examples\Scripts\CameraGun_Mobile.cs" />
+    <Compile Include="Assets\FORGE3D\Force Field\Examples\Scripts\F3DDespawn.cs" />
+    <Compile Include="Assets\FORGE3D\Force Field\Examples\Scripts\PlaneRotation.cs" />
+    <Compile Include="Assets\FORGE3D\Force Field\Examples\Scripts\RandomTorque.cs" />
+    <Compile Include="Assets\FORGE3D\Force Field\Examples\Scripts\SimpleGun.cs" />
+    <Compile Include="Assets\FORGE3D\Force Field\Examples\Scripts\SphereHover.cs" />
+    <Compile Include="Assets\FORGE3D\Force Field\Scripts\Forcefield.cs" />
+    <Compile Include="Assets\FORGE3D\Force Field\Scripts\Forcefield_Mobile.cs" />
+    <Compile Include="Assets\FORGE3D\Force Field\Scripts\MeshColliderChild.cs" />
+    <Compile Include="Assets\FORGE3D\Weapon Range\Scripts\F3DObserver.cs" />
+    <Compile Include="Assets\FORGE3D\Weapon Range\Scripts\F3DShieldFlash_PointLight.cs" />
+    <Compile Include="Assets\FORGE3D\Weapon Range\Scripts\F3DWeaponRangeCamera.cs" />
+    <Compile Include="Assets\FORGE3D\Weapon Range\Scripts\F3DWeaponRangeController.cs" />
+    <Compile Include="Assets\FORGE3D\Weapon Range\Scripts\F3DWeaponRangeLightController.cs" />
     <Compile Include="Assets\Import\AceArcadeMissiles\Demo\Scripts\AirToAirDrone.cs" />
     <Compile Include="Assets\Import\AceArcadeMissiles\Demo\Scripts\Drone.cs" />
     <Compile Include="Assets\Import\AceArcadeMissiles\Demo\Scripts\DroneTurret.cs" />
@@ -169,6 +184,9 @@
     <Compile Include="Assets\InAudioProject\InAudio\Scripts\Utilities\TreeWalker.cs" />
     <Compile Include="Assets\InAudioProject\InAudio\Scripts\Utilities\Tuple.cs" />
     <Compile Include="Assets\InAudioProject\InAudio\Scripts\Utilities\TupleList.cs" />
+    <Compile Include="Assets\Main\Scripts\Base\MonoBehaviourEX.cs" />
+    <Compile Include="Assets\Main\Scripts\Base\Singleton.cs" />
+    <Compile Include="Assets\Main\Scripts\Manager\GlobalStateManager.cs" />
     <Compile Include="Assets\Main\Scripts\Music\PlayingMusic.cs" />
     <Compile Include="Assets\Main\Scripts\Zone\DragBackZone.cs" />
     <Compile Include="Assets\ResurgamStudios\CircularGravityForce Package\Examples (Optional)\Shared Assets\Assets\Unity Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
@@ -225,6 +243,11 @@
     <Compile Include="Assets\ResurgamStudios\CircularGravityForce Package\Scrips\Triggers\CGF_EnableTrigger2D.cs" />
     <Compile Include="Assets\ResurgamStudios\CircularGravityForce Package\Scrips\Triggers\CGF_HoverTrigger.cs" />
     <Compile Include="Assets\ResurgamStudios\CircularGravityForce Package\Scrips\Triggers\CGF_HoverTrigger2D.cs" />
+    <Compile Include="Assets\SimplePhysicsToolkit\Scripts\BouncePlate.cs" />
+    <Compile Include="Assets\SimplePhysicsToolkit\Scripts\Magnet.cs" />
+    <Compile Include="Assets\SimplePhysicsToolkit\Scripts\Water.cs" />
+    <Compile Include="Assets\SimplePhysicsToolkit\Scripts\Wind.cs" />
+    <Compile Include="Assets\SimplePhysicsToolkit\Scripts\ZeroGravity.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabBrowserManager.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabBrowserWindow.cs" />
     <Compile Include="Assets\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabModelWindow.cs" />
@@ -245,9 +268,13 @@
     <None Include="Assets\Import\AceArcadeMissiles\Documentation\Changelog.txt" />
     <None Include="Assets\Import\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\background_list.txt" />
     <None Include="Assets\Import\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F03\Asphodel\facial_texture_list_b.txt" />
+    <None Include="Assets\FORGE3D\Force Field\Shaders\ForceField.shader" />
     <None Include="Assets\Import\TaichiCharacterPack\Viewer\Resources\Taichi\Viewer Settings\title_text.txt" />
+    <None Include="Assets\Main\skyboxes\meadow\readme.txt" />
     <None Include="Assets\ResurgamStudios\CircularGravityForce Package\Readme.txt" />
+    <None Include="Assets\FORGE3D\Force Field\Shaders\ForceField_Static_VertexAnim.shader" />
     <None Include="Assets\Import\TaichiCharacterPack\Viewer\Resources\Taichi\Viewer Settings\fbx_list.txt" />
+    <None Include="Assets\FORGE3D\Force Field\Shaders\ForceField_Static.shader" />
     <None Include="Assets\Import\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F03\Arum\facial_texture_list_a.txt" />
     <None Include="Assets\Import\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\stage_texture_list.txt" />
     <None Include="Assets\Import\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F03\Arum\fbx_list.txt" />
@@ -262,6 +289,7 @@
     <None Include="Assets\Import\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F01\animation_list.txt" />
     <None Include="Assets\Suriyun\UnityChanShader\Shader\CharaMain.cginc" />
     <None Include="Assets\Import\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F01\fbx_ctrl.xml" />
+    <None Include="Assets\Main\skyboxes\konserian_mountains\readme.txt" />
     <None Include="Assets\Import\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F05\fbx_list.txt" />
     <None Include="Assets\Import\AceArcadeMissiles\Documentation\License.txt" />
     <None Include="Assets\Suriyun\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
@@ -274,8 +302,12 @@
     <None Include="Assets\Import\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\M01\fbx_ctrl.xml" />
     <None Include="Assets\Import\TaichiCharacterPack\Viewer\Resources\Taichi\Viewer Settings\animation_list.txt" />
     <None Include="Assets\Suriyun\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
+    <None Include="Assets\FORGE3D\Weapon Range\Shaders\F3DLightEmissive.shader" />
+    <None Include="Assets\SimplePhysicsToolkit\Readme-Overview.txt" />
+    <None Include="Assets\Main\skyboxes\footballfield\readme.txt" />
     <None Include="Assets\Suriyun\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
     <None Include="Assets\Import\TaichiCharacterPack\Viewer\Resources\Taichi\Viewer Settings\stage_texture_list.txt" />
+    <None Include="Assets\FORGE3D\Force Field\Shaders\ForceField_Mobile.shader" />
     <None Include="Assets\InAudioProject\InAudio\Quickstart.txt" />
     <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFColorSpace.cginc" />
     <None Include="Assets\Import\TaichiCharacterPack\Releasenote.txt" />
@@ -288,14 +320,17 @@
     <None Include="Assets\Import\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F02\animation_list.txt" />
     <None Include="Assets\Suriyun\UnityChanShader\Shader\CharaOutline.cginc" />
     <None Include="Assets\Import\WWII P47 Thunderbolt\aeroplanes.shader" />
+    <None Include="Assets\Main\skyboxes\fishpond\readme.txt" />
     <None Include="Assets\Import\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F02\animation_list_all.txt" />
     <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFFlipTexture.shader" />
     <None Include="Assets\Suriyun\UnityChanShader\Shader\readme.txt" />
     <None Include="Assets\Suriyun\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
     <None Include="Assets\ResurgamStudios\CircularGravityForce Package\Examples (Optional)\Shared Assets\Assets\Unity Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\FORGE3D\Force Field\Shaders\ForceField_Static_Mobile.shader" />
     <None Include="Assets\Suriyun\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
     <None Include="Assets\Import\TaichiCharacterPack\Shaders\toon_hair.shader" />
     <None Include="Assets\Suriyun\README.txt" />
+    <None Include="Assets\FORGE3D\Force Field\Shaders\ForceField_Static_uv1.shader" />
     <None Include="Assets\Import\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F02\fbx_list.txt" />
     <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFPackOccMetalRough.shader" />
     <None Include="Assets\Import\TaichiCharacterPack\Viewer\Resources\Taichi\Viewer Settings\fbx_ctrl.xml" />

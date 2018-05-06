@@ -5,6 +5,51 @@
     <e p="F:\UnityProjects\IL2Sturmovik" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets\FORGE3D" t="Include">
+        <e p="Force Field" t="Include">
+          <e p="Examples" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CameraGun.cs" t="Include" />
+              <e p="CameraGun_Mobile.cs" t="Include" />
+              <e p="F3DDespawn.cs" t="Include" />
+              <e p="PlaneRotation.cs" t="Include" />
+              <e p="RandomTorque.cs" t="Include" />
+              <e p="SimpleGun.cs" t="Include" />
+              <e p="SphereHover.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Forcefield.cs" t="Include" />
+            <e p="Forcefield_Mobile.cs" t="Include" />
+            <e p="MeshColliderChild.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="ForceField.shader" t="Include" />
+            <e p="ForceField_Mobile.shader" t="Include" />
+            <e p="ForceField_Static.shader" t="Include" />
+            <e p="ForceField_Static_Mobile.shader" t="Include" />
+            <e p="ForceField_Static_uv1.shader" t="Include" />
+            <e p="ForceField_Static_VertexAnim.shader" t="Include" />
+          </e>
+        </e>
+        <e p="HelpMenu" t="Include">
+          <e p="Editor" t="Include">
+            <e p="F3DHelpMenu.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Weapon Range" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="F3DObserver.cs" t="Include" />
+            <e p="F3DShieldFlash_PointLight.cs" t="Include" />
+            <e p="F3DWeaponRangeCamera.cs" t="Include" />
+            <e p="F3DWeaponRangeController.cs" t="Include" />
+            <e p="F3DWeaponRangeLightController.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="F3DLightEmissive.shader" t="Include" />
+          </e>
+        </e>
+      </e>
       <e p="Assets\Import" t="Include">
         <e p="AceArcadeMissiles" t="Include">
           <e p="Demo" t="Include">
@@ -385,11 +430,32 @@
       </e>
       <e p="Assets\Main" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Base" t="Include">
+            <e p="MonoBehaviourEX.cs" t="Include" />
+            <e p="Singleton.cs" t="Include" />
+          </e>
+          <e p="Manager" t="Include">
+            <e p="GlobalStateManager.cs" t="Include" />
+          </e>
           <e p="Music" t="Include">
             <e p="PlayingMusic.cs" t="Include" />
           </e>
           <e p="Zone" t="Include">
             <e p="DragBackZone.cs" t="Include" />
+          </e>
+        </e>
+        <e p="skyboxes" t="Include">
+          <e p="fishpond" t="Include">
+            <e p="Readme.txt" t="Include" />
+          </e>
+          <e p="footballfield" t="Include">
+            <e p="Readme.txt" t="Include" />
+          </e>
+          <e p="konserian_mountains" t="Include">
+            <e p="Readme.txt" t="Include" />
+          </e>
+          <e p="meadow" t="Include">
+            <e p="Readme.txt" t="Include" />
           </e>
         </e>
       </e>
@@ -515,6 +581,16 @@
               <e p="CGF_HoverTrigger2D.cs" t="Include" />
             </e>
           </e>
+        </e>
+      </e>
+      <e p="Assets\SimplePhysicsToolkit" t="Include">
+        <e p="Readme-Overview.txt" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="BouncePlate.cs" t="Include" />
+          <e p="Magnet.cs" t="Include" />
+          <e p="Water.cs" t="Include" />
+          <e p="Wind.cs" t="Include" />
+          <e p="ZeroGravity.cs" t="Include" />
         </e>
       </e>
       <e p="Assets\Sketchfab For Unity" t="Include">

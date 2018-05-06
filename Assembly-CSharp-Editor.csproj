@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FORGE3D\HelpMenu\Editor\F3DHelpMenu.cs" />
     <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\AudioBankCreatorGUI.cs" />
     <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\AudioCreatorGUI.cs" />
     <Compile Include="Assets\InAudioProject\InAudio\Scripts\Editor\InAudio\AudioEventCreatorGUI.cs" />

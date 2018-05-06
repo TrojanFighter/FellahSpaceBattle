@@ -48,7 +48,7 @@ MonoBehaviour:
     Position: {x: 0, y: 0}
   MusicGUIData:
     SelectedNode: 542533993
-    Position: {x: 0, y: 0}
+    Position: {x: 0, y: 15}
   BankGUIData:
     SelectedNode: 896975861
     Position: {x: 0, y: 0}
