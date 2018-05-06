@@ -1,7 +1,8 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IL2Sturmovik", "Assembly-CSharp.csproj", "{FB66618A-9023-695C-CCD0-E1CBBADA9052}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{FB66618A-9023-695C-CCD0-E1CBBADA9052}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{B14CA594-1CFB-E4F7-ADB1-F51990CD1A77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +14,10 @@ Global
 		{FB66618A-9023-695C-CCD0-E1CBBADA9052}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB66618A-9023-695C-CCD0-E1CBBADA9052}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB66618A-9023-695C-CCD0-E1CBBADA9052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B14CA594-1CFB-E4F7-ADB1-F51990CD1A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B14CA594-1CFB-E4F7-ADB1-F51990CD1A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B14CA594-1CFB-E4F7-ADB1-F51990CD1A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B14CA594-1CFB-E4F7-ADB1-F51990CD1A77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

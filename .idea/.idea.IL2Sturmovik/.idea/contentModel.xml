@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\MusketeerOrder\.Rider2018.1\System\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_IL2Sturmovik.987822241.00" t="ExcludeRecursive" />
+    <e p="F:\UnityProjects\IL2Sturmovik" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets\Import" t="Include">
+        <e p="AceArcadeMissiles" t="Include">
+          <e p="Demo" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="AirToAirDrone.cs" t="Include" />
+              <e p="Drone.cs" t="Include" />
+              <e p="DroneTurret.cs" t="Include" />
+              <e p="LookAt.cs" t="Include" />
+              <e p="PlayerDrone.cs" t="Include" />
+              <e p="SceneRestarter.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Documentation" t="Include">
+            <e p="AudioLicenses.txt" t="Include" />
+            <e p="Changelog.txt" t="Include" />
+            <e p="License.txt" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="AAEnableLightOnEffectPlay.cs" t="Include" />
+            <e p="AAHardpoint.cs" t="Include" />
+            <e p="AAJitterDirection.cs" t="Include" />
+            <e p="AALauncher.cs" t="Include" />
+            <e p="AAMissile.cs" t="Include" />
+            <e p="AAMissileEffects.cs" t="Include" />
+            <e p="AAPod.cs" t="Include" />
+            <e p="AARemoveEffect.cs" t="Include" />
+            <e p="AAScrollingTrail.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TaichiCharacterPack" t="Include">
+          <e p="Readme.txt" t="Include" />
+          <e p="Releasenote.txt" t="Include" />
+          <e p="Shaders" t="Include">
+            <e p="toon_cutoff.shader" t="Include" />
+            <e p="toon_hair.shader" t="Include" />
+          </e>
+          <e p="TwinViewer" t="Include">
+            <e p="Resources" t="Include">
+              <e p="Taichi" t="Include">
+                <e p="TwinViewer Settings" t="Include">
+                  <e p="background_list.txt" t="Include" />
+                  <e p="F01" t="Include">
+                    <e p="animation_list.txt" t="Include" />
+                    <e p="animation_list_all.txt" t="Include" />
+                    <e p="fbx_ctrl.xml" t="Include" />
+                    <e p="fbx_list.txt" t="Include" />
+                  </e>
+                  <e p="F02" t="Include">
+                    <e p="animation_list.txt" t="Include" />
+                    <e p="animation_list_all.txt" t="Include" />
+                    <e p="fbx_ctrl.xml" t="Include" />
+                    <e p="fbx_list.txt" t="Include" />
+                  </e>
+                  <e p="F03" t="Include">
+                    <e p="Arum" t="Include">
+                      <e p="animation_list_a.txt" t="Include" />
+                      <e p="facial_texture_list_a.txt" t="Include" />
+                      <e p="fbx_ctrl.xml" t="Include" />
+                      <e p="fbx_list.txt" t="Include" />
+                    </e>
+                    <e p="Asphodel" t="Include">
+                      <e p="animation_list_b.txt" t="Include" />
+                      <e p="facial_texture_list_b.txt" t="Include" />
+                      <e p="fbx_ctrl.xml" t="Include" />
+                      <e p="fbx_list.txt" t="Include" />
+                    </e>
+                  </e>
+                  <e p="F05" t="Include">
+                    <e p="animation_list.txt" t="Include" />
+                    <e p="animation_list_all.txt" t="Include" />
+                    <e p="fbx_ctrl.xml" t="Include" />
+                    <e p="fbx_list.txt" t="Include" />
+                  </e>
+                  <e p="M01" t="Include">
+                    <e p="animation_list.txt" t="Include" />
+                    <e p="fbx_ctrl.xml" t="Include" />
+                    <e p="fbx_list.txt" t="Include" />
+                  </e>
+                  <e p="Puppet" t="Include">
+                    <e p="animation_list.txt" t="Include" />
+                    <e p="fbx_ctrl.xml" t="Include" />
+                    <e p="fbx_list.txt" t="Include" />
+                  </e>
+                  <e p="stage_texture_list.txt" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Twin2ndSceneScript.cs" t="Include" />
+              <e p="TwinSceneScript.cs" t="Include" />
+              <e p="TwinViewScript.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Viewer" t="Include">
+            <e p="Resources" t="Include">
+              <e p="Taichi" t="Include">
+                <e p="Viewer Settings" t="Include">
+                  <e p="animation_list.txt" t="Include" />
+                  <e p="background_list.txt" t="Include" />
+                  <e p="fbx_ctrl.xml" t="Include" />
+                  <e p="fbx_list.txt" t="Include" />
+                  <e p="stage_texture_list.txt" t="Include" />
+                  <e p="title_text.txt" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="SceneScript.cs" t="Include" />
+              <e p="ViewScript.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TailEar" t="Include">
+          <e p="Readme.txt" t="Include" />
+          <e p="Script" t="Include">
+            <e p="AutoRotateCharacter.cs" t="Include" />
+            <e p="Juno_SubstanceController.cs" t="Include" />
+            <e p="SampleMotionControl.cs" t="Include" />
+            <e p="ScriptableObjectUtility.cs" t="Include" />
+            <e p="UtilityScripts.cs" t="Include" />
+          </e>
+        </e>
+        <e p="WWII P47 Thunderbolt" t="Include">
+          <e p="aeroplanes.shader" t="Include" />
+        </e>
+      </e>
+      <e p="Assets\Sketchfab For Unity" t="Include">
+        <e p="Dependencies" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="GLTFBumpToNormal.shader" t="Include" />
+            <e p="GLTFColorSpace.cginc" t="Include" />
+            <e p="GLTFFlipTexture.shader" t="Include" />
+            <e p="GLTFLinear2sRGB.shader" t="Include" />
+            <e p="GLTFPackOccMetalRough.shader" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="AssetBrowser" t="Include">
+            <e p="SketchfabBrowserManager.cs" t="Include" />
+            <e p="SketchfabBrowserWindow.cs" t="Include" />
+            <e p="SketchfabModelWindow.cs" t="Include" />
+          </e>
+          <e p="Resizer.cs" t="Include" />
+          <e p="SketchfabApi.cs" t="Include" />
+          <e p="SketchfabExporter.cs" t="Include" />
+          <e p="SketchfabImporter.cs" t="Include" />
+          <e p="SketchfabImporterWindow.cs" t="Include" />
+          <e p="SketchfabLogger.cs" t="Include" />
+          <e p="SketchfabPlugin.cs" t="Include" />
+          <e p="SketchfabUI.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Assets\Suriyun" t="Include">
+        <e p="Readme.txt" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="AnimatorController.cs" t="Include" />
+          <e p="Swapper.cs" t="Include" />
+        </e>
+        <e p="UnityChanShader" t="Include">
+          <e p="Shader" t="Include">
+            <e p="CharaMain.cginc" t="Include" />
+            <e p="CharaOutline.cginc" t="Include" />
+            <e p="CharaSkin.cginc" t="Include" />
+            <e p="Readme.txt" t="Include" />
+            <e p="Unitychan_chara_akarami_blend.shader" t="Include" />
+            <e p="Unitychan_chara_eye.shader" t="Include" />
+            <e p="Unitychan_chara_eye_blend.shader" t="Include" />
+            <e p="Unitychan_chara_eyelash_blend.shader" t="Include" />
+            <e p="Unitychan_chara_fuku.shader" t="Include" />
+            <e p="Unitychan_chara_fuku_ds.shader" t="Include" />
+            <e p="Unitychan_chara_hada.shader" t="Include" />
+            <e p="Unitychan_chara_hada_blend.shader" t="Include" />
+            <e p="Unitychan_chara_hair.shader" t="Include" />
+            <e p="Unitychan_chara_hair_ds.shader" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="IL2Sturmovik.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
