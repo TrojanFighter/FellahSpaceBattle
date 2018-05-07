@@ -425,6 +425,9 @@
               <e p="MonoBehaviourEX.cs" t="Include" />
               <e p="Singleton.cs" t="Include" />
             </e>
+            <e p="Define" t="Include">
+              <e p="GlobalDefine.cs" t="Include" />
+            </e>
             <e p="Manager" t="Include">
               <e p="GlobalStateManager.cs" t="Include" />
             </e>
@@ -436,6 +439,7 @@
               <e p="BossBullet.cs" t="Include" />
               <e p="BossZero.cs" t="Include" />
               <e p="PowerUpSphere.cs" t="Include" />
+              <e p="SuperNovaExit.cs" t="Include" />
             </e>
             <e p="util" t="Include">
               <e p="AddInvertedMeshCollider.cs" t="Include" />

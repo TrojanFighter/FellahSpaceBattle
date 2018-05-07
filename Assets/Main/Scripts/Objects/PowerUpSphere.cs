@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using FellahSpaceBattle;
 using UnityEditor;
 using UnityEngine;
 
@@ -45,7 +46,8 @@ public class PowerUpSphere : MonoBehaviour
 			{
 				if (Time.time - lastInvertTime > InvertGapTime)
 				{
-					other.gameObject.GetComponent<PlayerDrone>().SwitchP47Mode(true);
+					//other.gameObject.GetComponent<PlayerDrone>().SwitchP47Mode(true);
+					GlobalStateManager.Instance.SwitchArmedState(true);
 					if (bInvertEffect)
 					{
 						other.transform.forward = -other.transform.forward;

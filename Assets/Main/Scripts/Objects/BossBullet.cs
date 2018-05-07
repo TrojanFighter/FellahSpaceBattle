@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using FellahSpaceBattle;
 using UnityEditor;
 using UnityEngine;
 
@@ -43,7 +44,13 @@ public class BossBullet : MonoBehaviour
 		if (other.transform == m_player)
 		{
 			m_player.GetComponent<Rigidbody>().AddForce((m_boss.position-m_player.position).normalized*applyForce,ForceMode.Acceleration);
-			m_player.GetComponent<PlayerDrone>().SwitchP47Mode(false);
+			//m_player.GetComponent<PlayerDrone>().SwitchP47Mode(false);
+			GlobalStateManager.Instance.SwitchArmedState(false);
+			SelfDestroy();
+		}
+		else if(other.GetComponent<AAMissile>())
+		{
+			other.GetComponent<AAMissile>().BossBulletTrigger();
 			SelfDestroy();
 		}
 	}

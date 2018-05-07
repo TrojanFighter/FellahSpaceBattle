@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114441048947373148}
   - component: {fileID: 114364836919266884}
   - component: {fileID: 114229763044641240}
+  - component: {fileID: 114357788994442246}
   m_Layer: 0
   m_Name: InAudio MusicSave
   m_TagString: Untagged
@@ -115,6 +116,39 @@ MonoBehaviour:
   _externalPlacement: 0
   _bankLink: {fileID: 114803948188834452, guid: d6d8dcb09b80c76409811a3480dfd623,
     type: 2}
+--- !u!114 &114357788994442246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1190826483623858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d726591de3f2f5c4580160d2378446e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: 1930021160
+  _name: Creation
+  _type: 2
+  _overrideParentMixerGroup: 0
+  _mixerGroup: {fileID: 0}
+  _minVolume: 1
+  _minPitch: 1
+  Filtered: 0
+  FoldedOut: 0
+  ScrollPosition: {x: 0, y: 0}
+  _children: []
+  _parent: {fileID: 114940314626235154}
+  runtimeVolume: 0
+  runtimePitch: 0
+  runtimeSolo: 0
+  runtimeMute: 0
+  _solo: 0
+  _mute: 0
+  _loop: 1
+  _autoStart: 0
+  _clips:
+  - {fileID: 8300000, guid: b4344795a76f2024e9b5652d2a86948f, type: 3}
 --- !u!114 &114364836919266884
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,7 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 596259946
-  _name: Empty Music Group Child
+  _name: Happy
   _type: 2
   _overrideParentMixerGroup: 0
   _mixerGroup: {fileID: 0}
@@ -160,7 +194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 1235224805
-  _name: Empty Music Group Child
+  _name: Stellaris
   _type: 2
   _overrideParentMixerGroup: 0
   _mixerGroup: {fileID: 0}
@@ -181,7 +215,6 @@ MonoBehaviour:
   _autoStart: 0
   _clips:
   - {fileID: 8300000, guid: e85b8c3787bab2d4882fd693640abdd9, type: 3}
-  - {fileID: 8300000, guid: eea1c2abc829782448cddb07afbe6e80, type: 3}
 --- !u!114 &114486172544465298
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -265,7 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 542533993
-  _name: Empty Music Group - Child 1
+  _name: Sorrow
   _type: 2
   _overrideParentMixerGroup: 0
   _mixerGroup: {fileID: 0}
@@ -342,6 +375,7 @@ MonoBehaviour:
   ScrollPosition: {x: 0, y: 0}
   _children:
   - {fileID: 114441048947373148}
+  - {fileID: 114357788994442246}
   _parent: {fileID: 114529627833011970}
   runtimeVolume: 1
   runtimePitch: 1

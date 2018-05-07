@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 466114}
   - component: {fileID: 3322036}
   - component: {fileID: 2390766}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - component: {fileID: 13605952}
   - component: {fileID: 11451724}
   - component: {fileID: 11453330}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Rocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 437384}
   - component: {fileID: 3395154}
   - component: {fileID: 2330040}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VisualModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 482090}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: TrailFx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 493370}
   - component: {fileID: 3343856}
   - component: {fileID: 2379804}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 497302}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,6 +196,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
@@ -230,6 +231,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
@@ -264,6 +266,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
@@ -338,10 +341,10 @@ MonoBehaviour:
   ownShip: {fileID: 0}
   attachPoint: {fileID: 497302}
   guidanceType: 0
-  seekerCone: 45
-  seekerRange: 5000
+  seekerCone: 0
+  seekerRange: 0
   overrideInitialSpeed: 0
-  initialSpeed: 250
+  initialSpeed: 100
   motorLifetime: 0
   acceleration: 0
   turnRate: 1

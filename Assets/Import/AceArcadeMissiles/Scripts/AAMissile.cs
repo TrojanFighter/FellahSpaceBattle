@@ -157,7 +157,12 @@ public class AAMissile : MonoBehaviour
         // Prevent missile from exploding if it hasn't activated yet.
         if (isLaunched && TimeSince(launchTime) > dropDelay)
         {
+            Debug.Log("Collision with: "+collision.gameObject.name);
             // This is a good place to apply damage based on what was collided with.
+            if (collision.collider.GetComponent<BossZero>())
+            {
+                collision.collider.GetComponent<BossZero>().GetHit(10);
+            }
             DestroyMissile(true);
         }
     }
@@ -344,5 +349,10 @@ public class AAMissile : MonoBehaviour
     private float TimeSince(float since)
     {
         return Time.time - since;
+    }
+
+    public void BossBulletTrigger()
+    {
+        DestroyMissile(true);
     }
 }

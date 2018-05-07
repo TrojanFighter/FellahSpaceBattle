@@ -1,15 +1,26 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using FellahSpaceBattle;
+using UnityScript.Macros;
 
 public class PlayerDrone : MonoBehaviour
 {
     public Transform target;
 
+    public GameObject m_armedBoy, m_unarmedBoy;
+
     public bool BP47Mode = false;
     public GameObject FighterModel;
 
+    public bool BRaycastingNova = false;
+    public bool BEscaping=false;
+
+    public float warpSpeed = 100f;
+
     public float thrust;
+    public float novaThurstDelta;
+    private float defaultThrust;
     public float yaw;
     public float pitch;
 
@@ -42,6 +53,7 @@ public class PlayerDrone : MonoBehaviour
 
     void Start()
     {
+        defaultThrust = thrust;
         allLaunchers = GetComponentsInChildren<AALauncher>();
 
         // Register all the launchers in their appropriate slots so they can be switched between.
@@ -94,8 +106,9 @@ public class PlayerDrone : MonoBehaviour
                 launcher.ResetLauncher();
         }*/
 
-        UpdateAmmoCounters();
-        spd.text = string.Format("{0:000}", rigidbody.velocity.magnitude);
+        //UpdateAmmoCounters();
+        //spd.text = string.Format("{0:000}", rigidbody.velocity.magnitude);
+        
     }
 
     public void SwitchP47Mode(bool isOn)
@@ -105,6 +118,7 @@ public class PlayerDrone : MonoBehaviour
         {
             FighterModel.SetActive(true);
             ReloadLaunchers();
+            
         }
         else
         {
@@ -127,6 +141,19 @@ public class PlayerDrone : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (BEscaping)
+        {
+            if ((transform.position - GlobalStateManager.Instance.m_Meadow.position).sqrMagnitude> 100f)
+            {
+                transform.position += (GlobalStateManager.Instance.m_Meadow.position - transform.position).normalized *Time.fixedDeltaTime * warpSpeed;
+                rigidbody.rotation=Quaternion.Euler(0,0,0);
+                rigidbody.freezeRotation = true;
+                rigidbody.isKinematic = true;
+            }
+
+            return;
+        }
+
         float inPitch = Input.GetAxis("Vertical");
         float inYaw = Input.GetAxis("Horizontal");
 
@@ -135,6 +162,39 @@ public class PlayerDrone : MonoBehaviour
         rigidbody.AddRelativeTorque(inPitch * pitch * FORCEMULT * Time.deltaTime,
                                     inYaw * yaw * FORCEMULT * Time.deltaTime,
                                     -inYaw * yaw * FORCEMULT * 0.5f * Time.deltaTime);
+        
+        if (BRaycastingNova)
+        {
+            int layerMask = 1 << LayerMask.NameToLayer("Nova");
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
+            {
+                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+                Debug.Log("Did Hit");
+                if (hit.collider.GetComponent<SuperNovaExit>())
+                {
+                    thrust += Time.fixedDeltaTime * novaThurstDelta;
+                }
+                else
+                {
+                    thrust = defaultThrust;
+                }
+            }
+            else
+            {
+                /*if ((transform.position - GlobalStateManager.Instance.m_Nova.position).sqrMagnitude < 2500f)
+                {
+                    BRaycastingNova = false;
+                    GlobalStateManager.Instance.SwitchGlobalGameState(GlobalGameState.Escaped);
+                }
+                else*/
+                {
+                    Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+                    Debug.Log("Did not Hit");
+                    thrust = defaultThrust;
+                }
+            }
+        }
     }
 
     private void FireWeapon()
@@ -145,6 +205,7 @@ public class PlayerDrone : MonoBehaviour
             AALauncher temp = launchers[selectedLauncherGroup].Dequeue();
             temp.Launch(target, rigidbody.velocity);
             launchers[selectedLauncherGroup].Enqueue(temp);
+            UpdateAmmoCounters();
         }
     }
 
@@ -184,7 +245,8 @@ public class PlayerDrone : MonoBehaviour
         }
         if (rocketCount == 0 && rocketMagazine == 0)
         {
-           SwitchP47Mode(false);
+           //SwitchP47Mode(false);
+            GlobalStateManager.Instance.SwitchArmedState(false);
         }
 
 
@@ -192,4 +254,25 @@ public class PlayerDrone : MonoBehaviour
         selectXMA.enabled = (selectedLauncherGroup == 1) ? true : false;
         selectRCL.enabled = (selectedLauncherGroup == 2) ? true : false;*/
     }
+    
+    
+
+    public void Escaped()
+    {
+        SwitchArmedBoy(false);
+    }
+
+    public void SwitchArmedBoy(bool armedboyOn)
+    {
+        m_armedBoy.SetActive(armedboyOn);
+        m_unarmedBoy.SetActive(!armedboyOn);
+        if (!armedboyOn)
+        {
+            rigidbody.rotation=Quaternion.Euler(0,0,0);
+            rigidbody.freezeRotation = true;
+            rigidbody.isKinematic = true;
+            BEscaping = true;
+        }
+    }
+
 }
