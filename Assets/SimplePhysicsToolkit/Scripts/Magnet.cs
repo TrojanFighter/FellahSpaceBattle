@@ -13,17 +13,18 @@ public class Magnet : MonoBehaviour {
 	public float magnetForce = 15.0f;
 	public bool attract = true;
 	public float innerRadius = 2.0f;
-	public float outerRadius = 5.0f; 
+	public float outerRadius = 5.0f;
+	public ForceMode m_ForceMode = ForceMode.Force;
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (attract) {
 			Collider[] objects = Physics.OverlapSphere (transform.position, outerRadius);
 			foreach (Collider col in objects) {
 				if (col.GetComponent<Rigidbody> ()) { //Must be rigidbody
 					if (Vector3.Distance (transform.position, col.transform.position) > innerRadius) {
 						//Apply force in direction of magnet center
-						col.GetComponent<Rigidbody> ().AddForce (magnetForce * (transform.position - col.transform.position).normalized, ForceMode.Force);
+						col.GetComponent<Rigidbody> ().AddForce (magnetForce * (transform.position - col.transform.position).normalized, m_ForceMode);
 					} else {
 						//Inner Radius float gentle - Future additional handling here
 					}

@@ -188,6 +188,9 @@
     <Compile Include="Assets\Main\Scripts\Base\Singleton.cs" />
     <Compile Include="Assets\Main\Scripts\Manager\GlobalStateManager.cs" />
     <Compile Include="Assets\Main\Scripts\Music\PlayingMusic.cs" />
+    <Compile Include="Assets\Main\Scripts\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Main\Scripts\Objects\BossBullet.cs" />
+    <Compile Include="Assets\Main\Scripts\Objects\BossZero.cs" />
     <Compile Include="Assets\Main\Scripts\Zone\DragBackZone.cs" />
     <Compile Include="Assets\ResurgamStudios\CircularGravityForce Package\Examples (Optional)\Shared Assets\Assets\Unity Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\ResurgamStudios\CircularGravityForce Package\Examples (Optional)\Shared Assets\Assets\Unity Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />

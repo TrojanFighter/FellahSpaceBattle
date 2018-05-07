@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114609739474537274}
   - component: {fileID: 114441048947373148}
   - component: {fileID: 114364836919266884}
+  - component: {fileID: 114229763044641240}
   m_Layer: 0
   m_Name: InAudio MusicSave
   m_TagString: Untagged
@@ -81,6 +82,39 @@ MonoBehaviour:
   _externalPlacement: 0
   _bankLink: {fileID: 114803948188834452, guid: d6d8dcb09b80c76409811a3480dfd623,
     type: 2}
+--- !u!114 &114229763044641240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1190826483623858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1dd8bd3ebb3dc04c98cd0fb8f35eedc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: 678826745
+  _name: Music Root Child
+  _type: 1
+  _overrideParentMixerGroup: 0
+  _mixerGroup: {fileID: 0}
+  _minVolume: 1
+  _minPitch: 1
+  Filtered: 0
+  FoldedOut: 0
+  ScrollPosition: {x: 0, y: 0}
+  _children: []
+  _parent: {fileID: 114529627833011970}
+  runtimeVolume: 1
+  runtimePitch: 1
+  runtimeSolo: 0
+  runtimeMute: 0
+  _solo: 0
+  _mute: 0
+  _overrideParentBank: 0
+  _externalPlacement: 0
+  _bankLink: {fileID: 114803948188834452, guid: d6d8dcb09b80c76409811a3480dfd623,
+    type: 2}
 --- !u!114 &114364836919266884
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,9 +137,9 @@ MonoBehaviour:
   FoldedOut: 0
   ScrollPosition: {x: 0, y: 0}
   _children: []
-  _parent: {fileID: 114755210865097502}
-  runtimeVolume: 0
-  runtimePitch: 0
+  _parent: {fileID: 114486172544465298}
+  runtimeVolume: 1
+  runtimePitch: 1
   runtimeSolo: 0
   runtimeMute: 0
   _solo: 0
@@ -136,9 +170,9 @@ MonoBehaviour:
   FoldedOut: 0
   ScrollPosition: {x: 0, y: 0}
   _children: []
-  _parent: {fileID: 114755210865097502}
-  runtimeVolume: 0
-  runtimePitch: 0
+  _parent: {fileID: 114940314626235154}
+  runtimeVolume: 1
+  runtimePitch: 1
   runtimeSolo: 0
   runtimeMute: 0
   _solo: 0
@@ -160,16 +194,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 899422041
-  _name: Music Folder 2
+  _name: Life
   _type: 1
   _overrideParentMixerGroup: 0
   _mixerGroup: {fileID: 0}
   _minVolume: 1
   _minPitch: 1
   Filtered: 0
-  FoldedOut: 0
+  FoldedOut: 1
   ScrollPosition: {x: 0, y: 0}
-  _children: []
+  _children:
+  - {fileID: 114364836919266884}
   _parent: {fileID: 114529627833011970}
   runtimeVolume: 1
   runtimePitch: 1
@@ -206,6 +241,7 @@ MonoBehaviour:
   - {fileID: 114068110282214278}
   - {fileID: 114940314626235154}
   - {fileID: 114486172544465298}
+  - {fileID: 114229763044641240}
   _parent: {fileID: 0}
   runtimeVolume: 1
   runtimePitch: 1
@@ -262,7 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 965818802
-  _name: Empty Music Group
+  _name: Sorrow
   _type: 2
   _overrideParentMixerGroup: 0
   _mixerGroup: {fileID: 0}
@@ -273,8 +309,6 @@ MonoBehaviour:
   ScrollPosition: {x: 0, y: 0}
   _children:
   - {fileID: 114609739474537274}
-  - {fileID: 114441048947373148}
-  - {fileID: 114364836919266884}
   _parent: {fileID: 114068110282214278}
   runtimeVolume: 1
   runtimePitch: 1
@@ -297,16 +331,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _guid: 1861973997
-  _name: Music Folder 1
+  _name: Stellaris
   _type: 1
   _overrideParentMixerGroup: 0
   _mixerGroup: {fileID: 0}
   _minVolume: 1
   _minPitch: 1
   Filtered: 0
-  FoldedOut: 0
+  FoldedOut: 1
   ScrollPosition: {x: 0, y: 0}
-  _children: []
+  _children:
+  - {fileID: 114441048947373148}
   _parent: {fileID: 114529627833011970}
   runtimeVolume: 1
   runtimePitch: 1
