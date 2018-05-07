@@ -3961,7 +3961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b40c63d722a74438d8fdc117598cec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 100
+  HP: 30
   m_Player: {fileID: 1051585794}
   m_Port: {fileID: 1500635260}
   m_bullet:
