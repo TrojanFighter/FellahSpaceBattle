@@ -102,4 +102,6 @@ public abstract class AALauncher : MonoBehaviour
     /// </summary>
     /// initialized with.</param>
     abstract public void ResetLauncher();
+    
+    abstract public void ClearLauncher();
 }

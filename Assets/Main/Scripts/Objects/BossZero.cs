@@ -34,9 +34,9 @@ public class BossZero : MonoBehaviour
 		while (true)
 		{
 			bulletCount++;
-			BossBullet bullet=Instantiate(m_bullet[bulletCount%m_bullet.Length], m_Port.position,m_Port.localRotation) as BossBullet;
+			BossBullet bullet=Instantiate(m_bullet[bulletCount%m_bullet.Length], m_Port.position,m_Player.rotation) as BossBullet;
 			bullet.transform.localScale=Vector3.one*3;
-			bullet.Init(m_Player);
+			bullet.Init(m_Player,transform);
 			//bullet.
 			yield return new WaitForSeconds(fireTimeGap);
 		}

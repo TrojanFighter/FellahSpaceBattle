@@ -93,6 +93,14 @@ public class AAHardpoint : AALauncher
 
         InitializeStations();
     }
+    
+    public override void ClearLauncher()
+    {
+        reloadCooldown = 0.0f;
+        magazineReloadCooldown = 0.0f;
+        missileCount = 0;
+
+    }
 
     /// <summary>
     /// Rebuilds the stations queue.

@@ -108,6 +108,15 @@ public class AAPod : AALauncher
         // itself because it's spawned dynamically anyway. Only the hardpoint has to despawn
         // the old missile and recreate it.
     }
+    
+    public override void ClearLauncher()
+    {
+        reloadCooldown = 0.0f;
+        magazineReloadCooldown = 0.0f;
+        missileCount = 0;
+        magazineCount = 0;
+
+    }
 
     /// <summary>
     /// Tell the missile launcher to manually load the next magazine. Note that any missiles left

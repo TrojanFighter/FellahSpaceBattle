@@ -15,6 +15,7 @@ public class Magnet : MonoBehaviour {
 	public float innerRadius = 2.0f;
 	public float outerRadius = 5.0f;
 	public ForceMode m_ForceMode = ForceMode.Force;
+	public bool bInvertDirection = false;
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -25,6 +26,10 @@ public class Magnet : MonoBehaviour {
 					if (Vector3.Distance (transform.position, col.transform.position) > innerRadius) {
 						//Apply force in direction of magnet center
 						col.GetComponent<Rigidbody> ().AddForce (magnetForce * (transform.position - col.transform.position).normalized, m_ForceMode);
+						if (bInvertDirection)
+						{
+							col.transform.forward = -col.transform.forward;
+						}
 					} else {
 						//Inner Radius float gentle - Future additional handling here
 					}

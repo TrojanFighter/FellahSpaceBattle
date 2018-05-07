@@ -6,17 +6,17 @@ using UnityEngine;
 public class BossBullet : MonoBehaviour
 {
 	private bool inited = false;
-	public Transform m_player;
+	public Transform m_player,m_boss;
 
 	public Vector3 DirectionToMove;
 
-	public float movingSpeed,applyForce=3000f;
+	public float movingSpeed,applyForce=2000f;
 	// Use this for initialization
 	void Start () {
 		
 	}
 
-	public void Init(Transform targetPlayer)
+	public void Init(Transform targetPlayer,Transform boss)
 	{
 		if (inited)
 		{
@@ -24,6 +24,7 @@ public class BossBullet : MonoBehaviour
 		}
 		inited = true;
 		m_player = targetPlayer;
+		m_boss = boss;
 
 		DirectionToMove = (targetPlayer.position - transform.position).normalized;
 	}
@@ -41,7 +42,8 @@ public class BossBullet : MonoBehaviour
 	{
 		if (other.transform == m_player)
 		{
-			m_player.GetComponent<Rigidbody>().AddForce(-DirectionToMove*applyForce,ForceMode.Impulse);
+			m_player.GetComponent<Rigidbody>().AddForce((m_boss.position-m_player.position).normalized*applyForce,ForceMode.Acceleration);
+			m_player.GetComponent<PlayerDrone>().SwitchP47Mode(false);
 			SelfDestroy();
 		}
 	}

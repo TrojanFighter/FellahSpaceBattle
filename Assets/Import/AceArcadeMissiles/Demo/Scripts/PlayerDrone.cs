@@ -6,6 +6,9 @@ public class PlayerDrone : MonoBehaviour
 {
     public Transform target;
 
+    public bool BP47Mode = false;
+    public GameObject FighterModel;
+
     public float thrust;
     public float yaw;
     public float pitch;
@@ -23,7 +26,7 @@ public class PlayerDrone : MonoBehaviour
 
     const float FORCEMULT = 100.0f;
 
-    int selectedLauncherGroup = 0;
+    int selectedLauncherGroup = 2;
     
     Queue<AALauncher>[] launchers;
     AALauncher[] allLaunchers;
@@ -64,12 +67,12 @@ public class PlayerDrone : MonoBehaviour
     void Update()
     {
         // Cycle launcher groups.
-        if (Input.GetButtonDown("Fire2"))
+        /*if (Input.GetButtonDown("Fire2"))
         {
             selectedLauncherGroup++;
             if (selectedLauncherGroup >= 3)
                 selectedLauncherGroup = 0;
-        }
+        }*/
 
         // Fire selected launcher group.
         // Rockets allowed to hold fire down.
@@ -85,14 +88,41 @@ public class PlayerDrone : MonoBehaviour
         }
 
         // Reset all weapons.
-        if (Input.GetKeyDown(KeyCode.X))
+        /*if (Input.GetKeyDown(KeyCode.X))
         {
             foreach (AALauncher launcher in allLaunchers)
                 launcher.ResetLauncher();
-        }
+        }*/
 
         UpdateAmmoCounters();
         spd.text = string.Format("{0:000}", rigidbody.velocity.magnitude);
+    }
+
+    public void SwitchP47Mode(bool isOn)
+    {
+        BP47Mode = isOn;
+        if (isOn)
+        {
+            FighterModel.SetActive(true);
+            ReloadLaunchers();
+        }
+        else
+        {
+            FighterModel.SetActive(false);
+            ClearLaunchers();
+        }
+    }
+
+    public void ReloadLaunchers()
+    {
+        foreach (AALauncher launcher in allLaunchers)
+            launcher.ResetLauncher();
+    }
+    
+    public void ClearLaunchers()
+    {
+        foreach (AALauncher launcher in allLaunchers)
+            launcher.ClearLauncher();
     }
 
     void FixedUpdate()
@@ -128,7 +158,7 @@ public class PlayerDrone : MonoBehaviour
 
         // This whole method is pretty inefficient, especially because it's in the update, but
         // this is just for the sake of demo.
-        foreach (AALauncher launcher in allLaunchers)
+        /*foreach (AALauncher launcher in allLaunchers)
         {
             if (launcher.name.StartsWith("MSL"))
                 missileCount += launcher.missileCount;
@@ -143,10 +173,23 @@ public class PlayerDrone : MonoBehaviour
 
         msl.text = string.Format("{0:00}", missileCount);
         xma.text = string.Format("{0:00}", xmaCount);
-        rcl.text = string.Format("{0:00}-{1:00}", rocketCount, rocketMagazine);
+        rcl.text = string.Format("{0:00}-{1:00}", rocketCount, rocketMagazine);*/
+        foreach (AALauncher launcher in allLaunchers)
+        {
+            if (launcher.name.StartsWith("RCL"))
+            {
+                rocketCount += launcher.missileCount;
+                rocketMagazine += launcher.MagazineCount;
+            }
+        }
+        if (rocketCount == 0 && rocketMagazine == 0)
+        {
+           SwitchP47Mode(false);
+        }
 
-        selectMSL.enabled = (selectedLauncherGroup == 0) ? true : false;
+
+        /*selectMSL.enabled = (selectedLauncherGroup == 0) ? true : false;
         selectXMA.enabled = (selectedLauncherGroup == 1) ? true : false;
-        selectRCL.enabled = (selectedLauncherGroup == 2) ? true : false;
+        selectRCL.enabled = (selectedLauncherGroup == 2) ? true : false;*/
     }
 }
